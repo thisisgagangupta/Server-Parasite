@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Processor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #inputForm {
+            margin-top: 50px;
+        }
+        #loading {
+            display: none;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Scrap</h1>
+    <form id="inputForm">
+        <label for="url">Enter a URL:</label><br>
+        <input type="text" id="url" name="url"><br><br>
+        <button type="button" onclick="processURL()">Proceed</button>
+    </form>
+
+    <div id="loading">
+        <p>Processing...</p>
+    </div>
+
+    <div id="result" style="display:none;">
+        <img src="elephant.jpg" alt="Processed Image">
+    </div>
+
+    <script>
+        function processURL() {
+            var url = document.getElementById('url').value;
+            document.getElementById('inputForm').style.display = 'none';
+            document.getElementById('loading').style.display = 'block';
+            setTimeout(function() {
+                // Simulate processing
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('result').style.display = 'block';
+            }, 3000); // Change 3000 to the desired processing time in milliseconds
+        }
+    </script>
+</body>
+</html>

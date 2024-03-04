@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-kP8toZKz6G9lcn++HzS6MXli8jyWc6UkFwUER5gEUp0F/Gh/Ue0H5emYY1bEZv1hM0y0oLQeL30yYRXIbwZ/ZA==" crossorigin="anonymous" />
+</head>
+<body>
+    <section id="header">
+        <p>
+        <div class="logo">
+                <a href="#"><img src="logo-header.png" class="logo" alt="logo"></a>
+        </div>
+
+     
+        <div class="header-icons">
+            <div class="search-icon">
+              <i class="fa fa-search"></i>
+            </div>
+            <a href="account.html">
+              <div class="user-icon">
+                <i class="fa fa-user" aria-hidden="true" style="color: black;"></i>
+              </div>
+            </a>
+            <a href="/cart">
+              <div class="cart-icon">
+                <i class="fa fa-shopping-cart aria-hidden="true" style="color: black;"></i>
+                <span class="cart-count" style="color: black;">0</span>
+              </div>
+            </a>
+          </div>
+
+
+        </p>
+        </section>
+        </section>
+                <!-- <li id="lg-bag"><a href="shoppingbag.html"><i class="fa-light fa-bag-shopping"></i></a></li> -->
+            </ul>
+        </div>
+
+    </section>
+
+
+    <div class="account-page">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="button" class="btn" onclick="window.location.href = 'home.html';">Login</button>
+
+                <div class="login-reqister">
+                    <p>Don't have an account? <a href="signup.html" class="register-link">Register</a></p>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and
+                <span>special offer.</span>
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <div class="logo">
+                <img src="logo-white.png" alt="logo" style="width:150px;height: 150px;">
+            </div>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-snapchat"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Info</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <p>Secured Payment Gateways</p>
+            <img src="pay.png" alt="">
+
+
+            <h4 class="extra">Contact :</h4>
+            <p><strong>Address: </strong>PES University</p>
+            <p><strong>Email:</strong> info.merchndyes@gmail.com </p>
+            <p><strong>Hours:</strong> 3:30 pm - 12:30 pm, Mon - Sat</p>
+        </div>
+
+        <div class="copyright">
+            <p>© 2021, MerchNDyes Private Limited </p>
+        </div>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
